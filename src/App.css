@@ -1,0 +1,35 @@
+
+
+body {
+    background-color: rgb(122, 121, 121);
+    color: green;
+    margin: 0px;
+    padding: 0px;
+    font-style: revert;
+    font-size: 50px;
+}
+
+.app-wrapper {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.app-layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.app-wrapper-content {
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-bottom: 1000px;
+}
+
+
+
+
+
+
+
+

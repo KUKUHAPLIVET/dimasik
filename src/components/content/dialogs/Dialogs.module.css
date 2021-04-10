@@ -1,0 +1,39 @@
+
+.dialogs{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(126, 126, 126, 0.5);
+}
+
+.messages{
+    margin-left: 100px;
+    text-shadow: 1px 0 1px #000,
+    0 1px 1px #000,
+    -1px 0 1px #000,
+    0 -1px 1px #000;
+}
+
+
+.dialog a{
+    text-decoration: none;
+}
+
+.active{
+    color: gold;
+}
+.textareams{
+    resize: none;
+    font-size: 30px;
+}
+.form button{
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    background-color: gold;
+    border-radius: 10px;
+    border: 10px double #320505;
+
+}
+.btnText{
+    text-align: center;
+}
