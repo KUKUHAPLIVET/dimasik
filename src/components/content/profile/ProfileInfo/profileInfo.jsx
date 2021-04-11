@@ -15,6 +15,7 @@ const ProfileInfo = (props) => {
             <div>
                 <div>
                     <img className={s.avatar1} src={props.profile.photos.large || usersAvatar}/>
+                    {this.props.match.params.userId||<input/>}
                     <div className={s.status}>
                         <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
                     </div>
