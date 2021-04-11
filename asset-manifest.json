@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/KUKUHAPLIVET/dimasik.git/static/css/main.4a402f68.chunk.css",
-    "main.js": "/KUKUHAPLIVET/dimasik.git/static/js/main.1f7e1d91.chunk.js",
-    "main.js.map": "/KUKUHAPLIVET/dimasik.git/static/js/main.1f7e1d91.chunk.js.map",
-    "runtime-main.js": "/KUKUHAPLIVET/dimasik.git/static/js/runtime-main.e00f0cd8.js",
-    "runtime-main.js.map": "/KUKUHAPLIVET/dimasik.git/static/js/runtime-main.e00f0cd8.js.map",
-    "static/js/2.a142ce97.chunk.js": "/KUKUHAPLIVET/dimasik.git/static/js/2.a142ce97.chunk.js",
-    "static/js/2.a142ce97.chunk.js.map": "/KUKUHAPLIVET/dimasik.git/static/js/2.a142ce97.chunk.js.map",
-    "static/css/3.f6f61fdf.chunk.css": "/KUKUHAPLIVET/dimasik.git/static/css/3.f6f61fdf.chunk.css",
-    "static/js/3.63f6a471.chunk.js": "/KUKUHAPLIVET/dimasik.git/static/js/3.63f6a471.chunk.js",
-    "static/js/3.63f6a471.chunk.js.map": "/KUKUHAPLIVET/dimasik.git/static/js/3.63f6a471.chunk.js.map",
-    "index.html": "/KUKUHAPLIVET/dimasik.git/index.html",
-    "static/css/3.f6f61fdf.chunk.css.map": "/KUKUHAPLIVET/dimasik.git/static/css/3.f6f61fdf.chunk.css.map",
-    "static/css/main.4a402f68.chunk.css.map": "/KUKUHAPLIVET/dimasik.git/static/css/main.4a402f68.chunk.css.map",
-    "static/js/2.a142ce97.chunk.js.LICENSE.txt": "/KUKUHAPLIVET/dimasik.git/static/js/2.a142ce97.chunk.js.LICENSE.txt",
-    "static/media/177095755.a2e575b7.png": "/KUKUHAPLIVET/dimasik.git/static/media/177095755.a2e575b7.png",
-    "static/media/Fantasy_Samurai_is_in_the_forest_096307_.5e546c26.jpg": "/KUKUHAPLIVET/dimasik.git/static/media/Fantasy_Samurai_is_in_the_forest_096307_.5e546c26.jpg",
-    "static/media/Infinity-1s-200px.6154bdd1.svg": "/KUKUHAPLIVET/dimasik.git/static/media/Infinity-1s-200px.6154bdd1.svg",
-    "static/media/paginator.module.css": "/KUKUHAPLIVET/dimasik.git/static/media/png-transparent-green-arrow-computer-icons-left-arrow-angle-rectangle-triangle.da1883d1.png",
-    "static/media/profile.module.css": "/KUKUHAPLIVET/dimasik.git/static/media/smeshnye_lica_foto_8.35d6dd06.png"
+    "main.css": "/dimasik/static/css/main.588bab35.chunk.css",
+    "main.js": "/dimasik/static/js/main.e00d5e8f.chunk.js",
+    "main.js.map": "/dimasik/static/js/main.e00d5e8f.chunk.js.map",
+    "runtime-main.js": "/dimasik/static/js/runtime-main.f90754cf.js",
+    "runtime-main.js.map": "/dimasik/static/js/runtime-main.f90754cf.js.map",
+    "static/js/2.a2ef7279.chunk.js": "/dimasik/static/js/2.a2ef7279.chunk.js",
+    "static/js/2.a2ef7279.chunk.js.map": "/dimasik/static/js/2.a2ef7279.chunk.js.map",
+    "static/css/3.f6f61fdf.chunk.css": "/dimasik/static/css/3.f6f61fdf.chunk.css",
+    "static/js/3.63f6a471.chunk.js": "/dimasik/static/js/3.63f6a471.chunk.js",
+    "static/js/3.63f6a471.chunk.js.map": "/dimasik/static/js/3.63f6a471.chunk.js.map",
+    "index.html": "/dimasik/index.html",
+    "static/css/3.f6f61fdf.chunk.css.map": "/dimasik/static/css/3.f6f61fdf.chunk.css.map",
+    "static/css/main.588bab35.chunk.css.map": "/dimasik/static/css/main.588bab35.chunk.css.map",
+    "static/js/2.a2ef7279.chunk.js.LICENSE.txt": "/dimasik/static/js/2.a2ef7279.chunk.js.LICENSE.txt",
+    "static/media/177095755.a2e575b7.png": "/dimasik/static/media/177095755.a2e575b7.png",
+    "static/media/Fantasy_Samurai_is_in_the_forest_096307_.5e546c26.jpg": "/dimasik/static/media/Fantasy_Samurai_is_in_the_forest_096307_.5e546c26.jpg",
+    "static/media/Infinity-1s-200px.89dcc7be.svg": "/dimasik/static/media/Infinity-1s-200px.89dcc7be.svg",
+    "static/media/paginator.module.css": "/dimasik/static/media/png-transparent-green-arrow-computer-icons-left-arrow-angle-rectangle-triangle.da1883d1.png",
+    "static/media/profile.module.css": "/dimasik/static/media/smeshnye_lica_foto_8.35d6dd06.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e00f0cd8.js",
-    "static/js/2.a142ce97.chunk.js",
-    "static/css/main.4a402f68.chunk.css",
-    "static/js/main.1f7e1d91.chunk.js"
+    "static/js/runtime-main.f90754cf.js",
+    "static/js/2.a2ef7279.chunk.js",
+    "static/css/main.588bab35.chunk.css",
+    "static/js/main.e00d5e8f.chunk.js"
   ]
 }
