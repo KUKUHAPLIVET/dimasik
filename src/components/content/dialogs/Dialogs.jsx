@@ -17,6 +17,7 @@ const Dialogs = (props) => {
 
     let addMessage = (values) => {
         props.sendMessage(values.newMessageBody)
+        values.newMessageBody=" "
     }
     // let onMessageChange = (e) => {   НЕ НАДО Т.К. ЮЗАЕМ redux-form
     //     let body = e.target.value
@@ -50,6 +51,7 @@ const AddMessageForm = (props) => {
                        placeholder={"Enter your message"}
                        cols={"20"}
                        rows={"5"}
+                       onKeyPress={event => event.key === "Enter" && props.handleSubmit()}
                 />
             </div>
             <div>
