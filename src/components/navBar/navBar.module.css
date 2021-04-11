@@ -1,0 +1,22 @@
+
+
+.buttons {
+    padding: 10px;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0a0f75;
+}
+
+.settingBtn {
+    margin-top: 30px;
+}
+.buttons a{
+    color: white;
+    text-decoration: none;
+}
+
+a.activeLink {
+    color: gold;
+}
+
