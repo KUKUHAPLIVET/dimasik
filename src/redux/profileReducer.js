@@ -1,5 +1,6 @@
 import {profileAPI, usersAPI} from "../api/api";
 import {act} from "@testing-library/react";
+import {stopSubmit} from "redux-form";
 
 const ADD_POST = "ADD_POST"
 // const UPDATE_NEW_POST_TEXT = "UPDATE_NEW_POST_TEXT"
@@ -97,6 +98,16 @@ export const savePhoto = (file) => async (dispatch) => {
     let response = await profileAPI.savePhoto(file)
     if (response.data.resultCode === 0) {
         dispatch(savePhotoSuccess(response.data.data.photos))
+    }
+}
+export const saveProfile = (profile) => async (dispatch, getState) => {
+    const userId =getState().auth.userId
+    const response = await profileAPI.saveProfile(profile)
+
+    if (response.data.resultCode === 0) {
+        dispatch(getUserProfile(userId))
+    }else{
+        dispatch(stopSubmit())
     }
 }
 

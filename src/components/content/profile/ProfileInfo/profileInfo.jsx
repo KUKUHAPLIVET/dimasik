@@ -7,7 +7,7 @@ import usersAvatar from "../../../../assets/users/4766477.12632792.1200x1200o.0a
 import ProfileDataForm from "./ProfileDataForm/ProfileDataForm";
 import ProfileDataFormReduxForm from "./ProfileDataForm/ProfileDataForm";
 
-const ProfileInfo = ({profile, isOwner, ...props}) => {
+const ProfileInfo = ({profile, isOwner,saveProfile, ...props}) => {
 
 
     const [editMode, setEditMode] = useState(false)
@@ -20,6 +20,11 @@ const ProfileInfo = ({profile, isOwner, ...props}) => {
             props.savePhoto(e.target.files[0])
         }
     }
+
+    const onSubmit = (formData)=>{
+        saveProfile(formData)
+        setEditMode(false)
+    }
     return (
         <div className={s.item}>
             <div>
@@ -30,7 +35,7 @@ const ProfileInfo = ({profile, isOwner, ...props}) => {
                         <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
                     </div>
 
-                    {editMode ? <ProfileDataFormReduxForm profile={profile}/> :
+                    {editMode ? <ProfileDataForm initialValues={profile} profile={profile} onSubmit={onSubmit}/> :
                         <ProfileData goToEditMode={() => setEditMode(true)} profile={profile} isOwner={isOwner}/>}
 
                 </div>
