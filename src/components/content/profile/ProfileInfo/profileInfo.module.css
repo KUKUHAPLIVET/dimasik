@@ -18,3 +18,9 @@
     color: gold;
     font-size: 25px;
 }
+
+.formSummaryError {
+    border: solid 1px red;
+    padding:5px;
+    color: #6a1515;
+}

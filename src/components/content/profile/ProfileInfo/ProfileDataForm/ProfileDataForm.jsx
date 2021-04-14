@@ -11,6 +11,9 @@ const ProfileDataForm = ({handleSubmit, profile,error}) => {
                 }}>save
                 </button>
             </div>
+            {error && <div className={s.formSummaryError}>
+                {error}
+            </div>}
 
             <div className={s.name}>
                 Name : {createField("Full name", "fullName", [], Input)}

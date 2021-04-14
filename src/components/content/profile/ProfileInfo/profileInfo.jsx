@@ -7,7 +7,7 @@ import usersAvatar from "../../../../assets/users/4766477.12632792.1200x1200o.0a
 import ProfileDataForm from "./ProfileDataForm/ProfileDataForm";
 import ProfileDataFormReduxForm from "./ProfileDataForm/ProfileDataForm";
 
-const ProfileInfo = ({profile, isOwner,saveProfile, ...props}) => {
+const ProfileInfo = ({profile, isOwner, saveProfile, ...props}) => {
 
 
     const [editMode, setEditMode] = useState(false)
@@ -21,9 +21,11 @@ const ProfileInfo = ({profile, isOwner,saveProfile, ...props}) => {
         }
     }
 
-    const onSubmit = (formData)=>{
-        saveProfile(formData)
-        setEditMode(false)
+    const onSubmit = (formData) => {
+        saveProfile(formData).then(
+            () => {
+            setEditMode(false)
+        })
     }
     return (
         <div className={s.item}>
@@ -76,7 +78,6 @@ const ProfileData = ({profile, isOwner, goToEditMode}) => {
         </div>
     )
 }
-
 
 
 const Contact = ({contactTitle, contactValue}) => {
