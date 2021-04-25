@@ -1,5 +1,7 @@
 import {authAPI, securityAPI} from "../api/api";
 import {stopSubmit} from "redux-form";
+import {getMyProfile} from "./profileReducer";
+
 
 const SET_USER_DATA = "SET_USER_DATA"
 const GET_CAPTCHA_URL_SUCCESS = "GET_CAPTCHA_URL_SUCCESS"
@@ -37,6 +39,8 @@ export const getAuthUserData = () => async (dispatch) => {
     if (response.data.resultCode === 0) {
         let {id, email, login} = response.data.data
         dispatch(setAuthUserData(id, email, login, true))
+        dispatch(getMyProfile(id))
+        // dispatch(getMyProfile(id))
     }
 }
 

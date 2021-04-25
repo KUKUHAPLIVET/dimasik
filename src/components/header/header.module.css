@@ -17,18 +17,23 @@
 }
 
 .nameSite {
-    font-family: ObelixPro;
-    color: #6d0789;
+    font-family: "Fira Code Light";
+    color: #F6EFEF;
 }
 
+.profileBlock{
+    margin-top: 5px;
+    display: flex;
+    align-self: center;
+}
 .logoMain {
-    width: 25px;
-    height: 25px;
+    width: 65px;
+    height: 65px;
 }
 
 .loginBlock{
-    margin-left: 100px;
-    color: gold;
+    margin-left: 800px;
+    color: #ffffff;
 }
 
 .loginBlock a {
@@ -39,4 +44,19 @@
 
 .text{
     margin-left: 70px;
+}
+
+.logOutBtn{
+    margin-left: 10px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.avatar{
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
 }

@@ -4,6 +4,7 @@ import {Field, reduxForm} from "redux-form";
 import {Input, Textarea} from "../../../utils/FormsControls/FormContorls";
 import {requiredField} from "../../../utils/Validators/validators";
 
+import cn from "classnames"
 const Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, portionSize, portionNumber, setPortionNumber, ...props}) => {
 
     let pagesCount = Math.ceil(totalItemsCount / pageSize)
@@ -24,11 +25,11 @@ const Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, porti
             {pages
                 .filter(p => p >= leftPortionNumber && p <= rightPortionNumber)
                 .map(p => {
-                    return <span className={`${currentPage === p && s.selectedPage} `}
+                    return <span className={cn({[s.selectedPage]:currentPage === p }, s.pageNumber)}
                                  onClick={(e) => {
                                      onPageChanged(p)
 
-                                 }}><div className={s.numberFont}>{p}</div></span>
+                                 }}> {p}</span>
                 })}
 
 
