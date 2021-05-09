@@ -27,10 +27,9 @@ const backImg = {
 
 class App extends Component {
 
-    catchAllUnhandledErrors =(reason, promise)=>{
-        alert("some error occured")
-
-    }
+    // catchAllUnhandledErrors =(reason, promise)=>{
+    //     alert("some error occured")
+    // }
     componentDidMount() {
         this.props.initializeApp()
         window.addEventListener("unhandledrejection", this.catchAllUnhandledErrors)
@@ -67,6 +66,8 @@ class App extends Component {
                             <Route path="/users"
                                    render={() => <UsersContainer/>}/>
                             <Route path="/login"
+                                   render={() => <Login/>}/>
+                            <Route path="/dimasik"
                                    render={() => <Login/>}/>
                             <Route exact path="*"
                                    render={() => <div>404 NOT FOUND</div>}/>

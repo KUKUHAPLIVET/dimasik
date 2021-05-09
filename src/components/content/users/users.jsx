@@ -8,8 +8,8 @@ import Paginator from "../../Common/Paginator/Paginator";
 import User from "./user";
 
 
-let Users = ({users, ...props}) => {
 
+let Users = ({users, ...props}) => {
 
     return <div className={s.content}>
         <Paginator totalItemsCount={props.totalUsersCount} {...props}/>

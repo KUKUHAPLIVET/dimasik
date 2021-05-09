@@ -45,6 +45,7 @@
     width: 100%;
     opacity: 0;
     position: relative;
+    bottom: 230px;
     margin: 15px 0;
     text-align: center;
 }
@@ -52,6 +53,9 @@
 .photoBorder:hover .input__wrapper{
     opacity: 1;
     pointer-events: auto;
+}
+.photoBorder:hover .avatar1{
+    opacity: 30%;
 }
 
 .input__file {
@@ -91,7 +95,7 @@
     width: 100%;
     max-width: 290px;
     height: 60px;
-    background: #1bbc9b;
+    background: #ffffff;
     color: #fff;
     font-size: 1.125rem;
     font-weight: 700;
