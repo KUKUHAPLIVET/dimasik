@@ -5,10 +5,20 @@ import {Input, Textarea} from "../../../utils/FormsControls/FormContorls";
 import {requiredField} from "../../../utils/Validators/validators";
 
 import cn from "classnames"
-const Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, portionSize, portionNumber, setPortionNumber, ...props}) => {
+
+type PropsType ={
+    totalItemsCount : number
+    pageSize : number
+    currentPage : number
+    onPageChanged : (pageNumber:number) => void
+    portionSize: number
+    portionNumber : number
+    setPortionNumber : (portionNumber:number) => number
+}
+let Paginator:React.FC<PropsType> = ({totalItemsCount, pageSize, currentPage, onPageChanged, portionSize, portionNumber, setPortionNumber, ...props}) => {
 
     let pagesCount = Math.ceil(totalItemsCount / pageSize)
-    let pages = []
+    let pages:Array<number> = []
     for (let i = 1; i <= pagesCount; i++) {
         pages.push(i)
     }
@@ -43,25 +53,30 @@ const Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, porti
 
     </div>
 }
+type PropsType2={
+    portionSize: number
+    pageCount: number
+    onPageChanged : (pageNumber:number) => void
+    setPortionNumber: (portionNumber:number)=> number
+}
+const AddPageNumber:React.FC<PropsType2> = ({portionSize,pageCount, onPageChanged,setPortionNumber}) => {
 
-const AddPageNumber = ({portionSize, ...props}) => {
-
-    const [page, setPage] = useState(false)
+    const [page, setPage] = useState<any>(false)
     const [error, setError] = useState(false)
 
 
     const onSubmit = () => {
-        if (parseInt(page) > props.pageCount || parseInt(page) <= 0 || !page) {
+        if (parseInt(page) > pageCount || parseInt(page) <= 0 || !page) {
             setError(true)
         } else {
-            props.onPageChanged(parseInt(page))
-            props.setPortionNumber(Math.ceil(parseInt(page) / portionSize))
+           onPageChanged(parseInt(page))
+           setPortionNumber(Math.ceil(parseInt(page) / portionSize))
             setError(false)
             setPage(false)
         }
     }
     return (
-        <div className={error && s.error}>
+        <div className={s.error}>
             <div>
                 <input className={s.input} value={page} onChange={(e) => setPage(e.currentTarget.value)} type="number"
                        onKeyPress={event => event.key === "Enter" && onSubmit()}
@@ -71,10 +86,15 @@ const AddPageNumber = ({portionSize, ...props}) => {
             <div>
                 <button onClick={onSubmit}>CLICK</button>
             </div>
-            {error && <div className={s.errorText}>Max number page {props.pageCount}</div>}
+            {error && <div className={s.errorText}>Max number page {pageCount}</div>}
         </div>
     )
 }
 
 
 export default Paginator
+
+
+
+
+
